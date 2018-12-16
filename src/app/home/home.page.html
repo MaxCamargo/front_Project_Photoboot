@@ -1,12 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://beta.ionicframework.com/docs/">docs</a> will be your guide.</p>
+ <ion-card class="welcome-card">
+        <ion-img src="/assets/shapes.svg"></ion-img>
+        <ion-card-header>
+          <ion-card-subtitle>¡En hora buena, ahora eres parte de esta comunidad</ion-card-subtitle>
+          <ion-card-title>Bienvenido A PhotoMaxx</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>¡Ahora puedes compartir, descargar y subir todas las fotos que tu quieras!.</p>
+        </ion-card-content>
+      </ion-card>
+ 
+  <ion-item>
+    <ion-input placeholder="Iniciar Sesion" [(ngModel)]="valor"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-input required type="password" placeholder="Password:"></ion-input>
+  </ion-item>
+ 
+  <ion-button expand="full" color="dark">Iniciar Sesion</ion-button>
+  <ion-button expand="full" color="danger" routerLink="/register">registrarse</ion-button>
 </ion-content>
+
