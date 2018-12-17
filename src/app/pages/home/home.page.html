@@ -1,0 +1,29 @@
+<ion-header padding right>
+  <ion-img src="./assets/images/LOGO.svg" class="logo"></ion-img>
+</ion-header>
+
+<ion-content padding>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Iniciar sesion</ion-card-subtitle>
+      <ion-card-title>Bienvenido A PhotoMax</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>¡Ahora puedes compartir, descargar y subir todas las fotos que tu quieras!.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <form (ngSubmit)="loginAction()">
+    <ion-item>
+      <ion-input placeholder="Iniciar Sesion"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input required type="password" placeholder="Password:"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Iniciar Sesion</ion-button>
+    <ion-button expand="full" color="danger" routerLink="/register">registrarse</ion-button>
+  </form>
+</ion-content>
