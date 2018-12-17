@@ -1,0 +1,26 @@
+<ion-header padding right>
+    <ion-img src="./assets/images/LOGO.svg" class="logo"></ion-img>
+</ion-header>
+
+<ion-content padding>
+    <form (ngSubmit)="registerAction()">
+        <ion-item>
+            <ion-input required type="text" placeholder="Nombres:"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input required type="text" placeholder="Apellidos:"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input required type="email" placeholder="Email:"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input required type="password" placeholder="Password:"></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" type="submit">Crear Cuenta</ion-button>
+        <ion-button expand="full" color="danger" routerLink="/home">Atras</ion-button>
+    </form>
+</ion-content>
