@@ -7,27 +7,18 @@ import { Router, RouterEvent } from '@angular/router';
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage implements OnInit {
+  selectedPath = '';
 
-  selectedPath ='';
-
-pages= [
-  {
-    title: 'Mi Dashboard',
-    url:'/menu/(menucontent:dashboard)'
-  },
-  {
-    title: 'Mi Perfil',
-    url:'/menu/(menucontent:perfilusuario)'
-  }
-];
+  pages = [
+    { title: 'Mi Dashboard', url: '/menu/(menucontent:dashboard)' },
+    { title: 'Mi Perfil', url: '/menu/(menucontent:perfilusuario)' }
+  ];
 
   constructor(private router: Router) {
     this.router.events.subscribe((event: RouterEvent) => {
       this.selectedPath = event.url;
-    } );
-   }
-
+    });
+  }
   ngOnInit() {
   }
-
 }
