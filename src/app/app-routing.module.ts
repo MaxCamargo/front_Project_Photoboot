@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
     { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
     { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' },
     { path: 'dashboard', loadChildren: './pages/dashboard/dashboard.module#DashboardPageModule' },
-    { path: 'perfilusuario', loadChildren: './pages/dashboard/dashboard.module#DashboardPageModule' },
+    { path: 'perfilusuario', loadChildren: './pages/perfilusuario/perfilusuario.module#PerfilusuarioPageModule' },
   ])],
   exports: [RouterModule]
 })
