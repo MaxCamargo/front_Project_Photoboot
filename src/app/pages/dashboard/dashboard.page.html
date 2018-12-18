@@ -3,10 +3,66 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Mi Dashboard</ion-title>
+    <ion-title>DashFoto</ion-title>
   </ion-toolbar>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="./assets/images/dash1.png">
+      </ion-avatar>
+      <ion-label>
+        <p>¡Hola Paola! Busca tus fotos favoritas</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-header>
 
-<ion-content padding>
-  <h2>hola</h2>
+<ion-toolbar>
+  <ion-searchbar></ion-searchbar>
+</ion-toolbar>
+
+  <ion-content class="card-background-page">
+      <!-- INICIO DEL CARD USUARIO-->
+      <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>¡Enhora Buena!</ion-card-subtitle>
+            <ion-card-title>Descubre Nuevas fotos</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            ¡Yaas¡ Ahora eres parte de esta magnifica comunidad. busca, descubre y sube tus fotos favoritas.
+          </ion-card-content>
+        </ion-card>
+<!-- FIN DEL CARD USUARIO-->
+
+    <!-- fab placed to the top end -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <!-- fab placed to the top end -->
+    <ion-card>
+      <img src="./assets/images/dash1.png"/>
+      <div class="card-title" padding>Playas</div>
+      <div class="card-subtitle">41 Fotos</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="./assets/images/dash2.png"/>
+      <div class="card-title">Carros</div>
+      <div class="card-subtitle">64 Fotos</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="./assets/images/dash3.png"/>
+      <div class="card-title">Gatos</div>
+      <div class="card-subtitle">72 fotos</div>
+    </ion-card>
+  
+    <ion-card>
+      <img src="./assets/images/dash1.png"/>
+      <div class="card-title">Madison</div>
+      <div class="card-subtitle">28 Fotos</div>
+    </ion-card>
 </ion-content>

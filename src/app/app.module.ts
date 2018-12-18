@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { HomePageModule } from './pages/home/home.module';
 import { RegisterPageModule } from './pages/register/register.module';
+import { DashboardPageModule } from './pages/dashboard/dashboard.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,8 @@ import { RegisterPageModule } from './pages/register/register.module';
     IonicModule.forRoot(),
     AppRoutingModule,
     HomePageModule,
-    RegisterPageModule
+    RegisterPageModule,
+    DashboardPageModule
   ],
   providers: [
     StatusBar,
