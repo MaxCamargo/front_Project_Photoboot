@@ -1,3 +1,4 @@
+import { PerfilusuarioPageModule } from './pages/perfilusuario/perfilusuario.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -22,7 +23,8 @@ import { DashboardPageModule } from './pages/dashboard/dashboard.module';
     AppRoutingModule,
     HomePageModule,
     RegisterPageModule,
-    DashboardPageModule
+    DashboardPageModule,
+    PerfilusuarioPageModule
   ],
   providers: [
     StatusBar,
