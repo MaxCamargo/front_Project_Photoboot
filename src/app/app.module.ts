@@ -1,4 +1,3 @@
-import { PerfilusuarioPageModule } from './pages/perfilusuario/perfilusuario.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -13,9 +12,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomePageModule } from './pages/home/home.module';
 import { RegisterPageModule } from './pages/register/register.module';
 import { DashboardPageModule } from './pages/dashboard/dashboard.module';
+import { PerfilusuarioPageModule } from './pages/perfilusuario/perfilusuario.module';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MenuComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
@@ -24,7 +25,7 @@ import { DashboardPageModule } from './pages/dashboard/dashboard.module';
     HomePageModule,
     RegisterPageModule,
     DashboardPageModule,
-    PerfilusuarioPageModule
+    PerfilusuarioPageModule,
   ],
   providers: [
     StatusBar,
@@ -33,4 +34,4 @@ import { DashboardPageModule } from './pages/dashboard/dashboard.module';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { content: ''; }
