@@ -1,69 +1,76 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>DashFoto</ion-title>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+      </ion-buttons>
+    <ion-title small left>Photodash</ion-title>
+    <ion-img src="./assets/images/LOGO.svg" class="logo"></ion-img>
   </ion-toolbar>
-  <ion-list>
+  <!--avatar1-->
+  <ion-list no-border>
     <ion-item>
       <ion-avatar slot="start">
         <img src="./assets/images/dash1.png">
       </ion-avatar>
       <ion-label class="muestras">
         <p>¡Hola Paola! Busca tus fotos favoritas</p>
-        <ion-button size="small">Ver Perfil</ion-button>
+        <ion-button size="small" routerLink="/perfilusuario">Ver Perfil</ion-button>
       </ion-label>
     </ion-item>
   </ion-list>
+  <!--fin avatar1-->
 </ion-header>
 
 <ion-toolbar>
   <ion-searchbar></ion-searchbar>
 </ion-toolbar>
 
-  <ion-content class="card-background-page">
-      <!-- INICIO DEL CARD USUARIO-->
-      <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle>¡Enhora Buena!</ion-card-subtitle>
-            <ion-card-title>Descubre Nuevas fotos</ion-card-title>
-          </ion-card-header>
-        
-          <ion-card-content>
-            ¡Yaas¡ Ahora eres parte de esta magnifica comunidad. busca, descubre y sube tus fotos favoritas.
-          </ion-card-content>
-        </ion-card>
-<!-- FIN DEL CARD USUARIO-->
+<ion-content class="card-background-page">
+  <!-- INICIO DEL CARD USUARIO-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>¡Enhora Buena!</ion-card-subtitle>
+      <ion-card-title>Descubre Nuevas fotos</ion-card-title>
+    </ion-card-header>
 
-    <!-- fab placed to the top end -->
-    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button>
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
-    <!-- fab placed to the top end -->
-    <ion-card>
-      <img src="./assets/images/dash1.png"/>
-      <div class="card-title" padding>Playas</div>
-      <div class="card-subtitle">41 Fotos</div>
-    </ion-card>
-  
-    <ion-card>
-      <img src="./assets/images/dash2.png"/>
-      <div class="card-title">Carros</div>
-      <div class="card-subtitle">64 Fotos</div>
-    </ion-card>
-  
-    <ion-card>
-      <img src="./assets/images/dash3.png"/>
-      <div class="card-title">Gatos</div>
-      <div class="card-subtitle">72 fotos</div>
-    </ion-card>
-  
-    <ion-card>
-      <img src="./assets/images/dash1.png"/>
-      <div class="card-title">Madison</div>
-      <div class="card-subtitle">28 Fotos</div>
-    </ion-card>
+    <ion-card-content>
+      ¡Yaas¡ Ahora eres parte de esta magnifica comunidad. busca, descubre y sube tus fotos favoritas.
+    </ion-card-content>
+  </ion-card>
+  <!-- FIN DEL CARD USUARIO-->
+
+
+  <!-- fab placed to the top end -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <!-- fab placed to the top end -->
+
+  <!--Fotos Card-->
+  <ion-card>
+    <img src="./assets/images/dash1.png" />
+    <div class="card-title" padding>Playas</div>
+    <div class="card-subtitle">41 Fotos</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="./assets/images/dash2.png" />
+    <div class="card-title">Carros</div>
+    <div class="card-subtitle">64 Fotos</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="./assets/images/dash3.png" />
+    <div class="card-title">Gatos</div>
+    <div class="card-subtitle">72 fotos</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="./assets/images/dash1.png" />
+    <div class="card-title">Madison</div>
+    <div class="card-subtitle">28 Fotos</div>
+  </ion-card>
+  <!--Fotos Card-->
 </ion-content>
