@@ -14,6 +14,8 @@ import { RegisterPageModule } from './pages/register/register.module';
 import { DashboardPageModule } from './pages/dashboard/dashboard.module';
 import { PerfilusuarioPageModule } from './pages/perfilusuario/perfilusuario.module';
 import { MenuComponent } from './components/menu/menu.component';
+import { Proxy } from 'src/helpers/proxy/proxy';
+import { UserProxy } from 'src/helpers/proxy/user.proxy';
 
 @NgModule({
   declarations: [AppComponent, MenuComponent],
@@ -30,7 +32,8 @@ import { MenuComponent } from './components/menu/menu.component';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    Proxy, UserProxy
   ],
   bootstrap: [AppComponent]
 })
