@@ -26,13 +26,13 @@
     </ion-card-content>
   </ion-card>
 
-  <form (ngSubmit)="loginAction()">
+  <form (submit)="loginAction($event)">
     <ion-item>
-      <ion-input placeholder="Iniciar Sesion"></ion-input>
+      <ion-input placeholder="Iniciar Sesion" name="username"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input required type="password" placeholder="Password:"></ion-input>
+      <ion-input required type="password" placeholder="Password:" name="password"></ion-input>
     </ion-item>
 
     <ion-button expand="full" type="submit">Iniciar Sesion</ion-button>

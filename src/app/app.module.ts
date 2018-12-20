@@ -16,6 +16,7 @@ import { PerfilusuarioPageModule } from './pages/perfilusuario/perfilusuario.mod
 import { MenuComponent } from './components/menu/menu.component';
 import { Proxy } from 'src/helpers/proxy/proxy';
 import { UserProxy } from 'src/helpers/proxy/user.proxy';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, MenuComponent],
@@ -24,6 +25,7 @@ import { UserProxy } from 'src/helpers/proxy/user.proxy';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    HttpClientModule,
     HomePageModule,
     RegisterPageModule,
     DashboardPageModule,
@@ -32,8 +34,10 @@ import { UserProxy } from 'src/helpers/proxy/user.proxy';
   providers: [
     StatusBar,
     SplashScreen,
+    HttpClient,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    Proxy, UserProxy
+    UserProxy,
+    Proxy
   ],
   bootstrap: [AppComponent]
 })
