@@ -33,7 +33,7 @@ export class HomePage {
 
     var params = {
       email: event.target[0].value,
-      password: event.target[0].value
+      password: event.target[1].value
     };
 
     this.proxy.user.login(params)
